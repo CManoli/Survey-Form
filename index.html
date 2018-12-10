@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Survey Form</h1>
+        <div id="survey">
+            <p id="description">Do you like the city you live in?</p>
+
+            <form id="survey-form">
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="name-label">*Name: </label>
+                    </div>
+                    <div class="rightTab">
+                        <input autofocus id="name" class="input-field" type="text" name="name" placeholder="Enter your name" required>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="email-label">*Email: </label>
+                    </div>
+                    <div class="rightTab">
+                        <input id="email" class="input-field" type="email" name="name" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="number-label">*Age: </label>
+                    </div>
+                    <div class="rightTab">
+                        <input id="number" class="input-field" min="1" max="125" type="number" name="age" placeholder="Age">
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label>Which option best describes your current role?</label>
+                    </div>
+                    <div class="rightTab">
+                        <select name="currentPos" id="dropdown">
+                            <option disabled value>Select an option</option>
+                            <option value="student">Student</option>
+                            <option value="job">Full time job</option>
+                            <option value="preferNo">Prefer not to say</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label>How wold you discribe the city you live in?</label>
+                    </div>
+                    <div class="rightTab">
+                        <ul>
+                            <li class="radio">
+                                <input name="radio-buttons" type="radio" class="userRatings" value="1">
+                                Ugly
+                            </li>
+                            <li class="radio">
+                                <input name="radio-buttons" type="radio" class="userRatings" value="1">
+                                Nice    
+                            </li>
+                            <li class="radio">
+                                <input name="radio-buttons" type="radio" class="userRatings" value="1">
+                                Beautiful 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label>Things that should be improved in your city:
+                        </label>
+                    </div>
+                    <div class="rightTab">
+                        <ul id="preferences">
+                            <li class="checkbox">
+                                <input class="userRatings" type="checkbox" value="1">
+                                More green spaces
+                            </li>
+                            <li class="checkbox">
+                                <input class="userRatings" type="checkbox" value="2">
+                                More parking lots
+                            </li>
+                            <li class="checkbox">
+                                <input class="userRatings" type="checkbox" value="3">
+                                Wider streets
+                            </li>
+                            <li class="checkbox">
+                                <input class="userRatings" type="checkbox" value="4">
+                                More playgrounds
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label>Any Comments or Suggestions?</label>
+                    </div>
+                    <div class="rightTab">
+                        <textarea name="comment" id="comments" class="input-field" cols="30" rows="10">Enter your comment here...</textarea>
+                    </div>
+                </div>
+
+                <button id="submit" type="submit">Submit</button>          
+            </form>
+        </div>
+    </div>
+</body>
+</html>
