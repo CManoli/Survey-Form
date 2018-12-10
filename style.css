@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open-sans', sans-serif;
+}
+
+/* MAIN */ 
+#main {
+    background-color: rgba(240, 232, 232, 0.856); 
+}
+
+/* TITLE */ 
+#title {
+    text-align: center;
+}
+
+#title h1 {
+    padding-top: 2rem;
+}
+
+#title p {
+    padding-bottom: 1.5rem;
+}
+
+/* IMG-DIV */
+#img-div {
+    background-color: #fff;
+    text-align: center;
+}
+
+#img-div p {
+    padding-bottom: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+/* TRIBUTE-INFO */ 
+#tribute-info h3 {
+    padding-top: 1rem;
+    margin-left: 25rem;
+}
+
+#tribute-info ul {
+    padding: 0 30% 1rem 25%;
+    margin-left: 5rem;
+}
+
+/* QUOTE */ 
+#quote {
+    text-align: center;
+}
+
+/* BIOGRAPHY */ 
+#biography h3 {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
